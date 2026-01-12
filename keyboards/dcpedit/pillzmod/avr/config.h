@@ -30,3 +30,7 @@
 
 // LED for layer indicator
 #define LED_LAYER_PIN F0
+
+#ifdef AUTO_SHIFT_ENABLE
+#define AUTO_SHIFT_TIMEOUT 500
+#endif
