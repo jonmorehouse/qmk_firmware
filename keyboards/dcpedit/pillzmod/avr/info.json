@@ -1,5 +1,5 @@
 {
-    "bootloader": "caterina",
+    "bootloader": "atmel-dfu",
     "features": {
         "haptic": true
     },
