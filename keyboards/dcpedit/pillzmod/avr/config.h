@@ -13,7 +13,12 @@
 #endif
 
 #define SOLENOID_PIN   B0
-//#define NO_HAPTIC_MOD
+#define NO_HAPTIC_MOD
+
+#define SOLENOID_DEFAULT_DWELL 50
+
+#define HAPTIC_OFF_IN_LOW_POWER 1
+#define HAPTIC_ENABLE_STATUS_LED F1
 
 // SPI configuration
 #define SPI_MATRIX_DIVISOR 16

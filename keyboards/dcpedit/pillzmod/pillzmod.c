@@ -1,11 +1,23 @@
 // Copyright 2024 Ming-Gih Lam (@dcpedit)
 // SPDX-License-Identifier: GPL-2.0-or-later
 #include "quantum.h"
+#include "haptic.h"
 
 #define NUM_LAYER     1
 
+// Initialize solenoid pin as early as possible to prevent floating
+void keyboard_pre_init_user(void) {
+  setPinOutput(B0);
+  writePinLow(B0);
+}
+
 void matrix_init_user(void) {
   setPinOutput(LED_LAYER_PIN);
+}
+
+void keyboard_post_init_user(void) {
+  // Force haptic/solenoid ON at startup
+  haptic_enable();
 }
 
 // Initialize your default layer
