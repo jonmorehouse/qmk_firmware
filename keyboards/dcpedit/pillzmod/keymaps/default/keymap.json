@@ -14,7 +14,7 @@
                   "KC_GRV",   "KC_INS",   "KC_LEFT",  "KC_RGHT",                                                                   "KC_UP",    "KC_DOWN",  "KC_LBRC",  "KC_RBRC",
                                                       "TO(1)",  "TO(2)",                                           "KC_RGUI",  "KC_RCTL",
                                                                   "KC_HOME",                                           "KC_PGUP",
-                                          "KC_RGUI",  "KC_BSPC",   "KC_END",                                            "KC_PGDN",  "KC_ENTER", "KC_SPC",
+                                          "KC_RGUI",  "KC_BSPC",   "QK_HAPTIC_TOGGLE",                                            "KC_PGDN",  "KC_ENTER", "KC_SPC",
       "KC_A",     "KC_B",     "KC_C"
     ],
     [
