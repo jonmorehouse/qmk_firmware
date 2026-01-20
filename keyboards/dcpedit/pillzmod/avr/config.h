@@ -13,7 +13,7 @@
 #endif
 
 #define SOLENOID_PIN   B0
-#define NO_HAPTIC_MOD
+//#define NO_HAPTIC_MOD
 
 // SPI configuration
 #define SPI_MATRIX_DIVISOR 16
