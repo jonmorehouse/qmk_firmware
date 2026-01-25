@@ -1,5 +1,4 @@
-{
-  "keyboard": "dcpedit/pillzmod",
+{ "keyboard": "dcpedit/pillzmod",
   "keymap": "default",
   "author": "dcpedit",
   "version": 1,
@@ -13,7 +12,7 @@
       "KC_LSFT",  "KC_Z",     "KC_X",     "KC_C",     "KC_V",     "KC_B",                                              "KC_N",     "KC_M",     "KC_COMM",  "KC_DOT",   "KC_SLSH",  "KC_RSFT",
                   "KC_GRV",   "KC_INS",   "KC_LEFT",  "KC_RGHT",                                                                   "KC_UP",    "KC_DOWN",  "KC_LBRC",  "KC_RBRC",
                                                       "TO(1)",  "TO(2)",                                           "KC_RGUI",  "KC_RCTL",
-                                                                  "KC_HOME",                                           "KC_PGUP",
+                                                                  "KC_SYSTEM_SLEEP",                                           "KC_PGUP",
                                           "KC_RGUI",  "KC_BSPC",   "QK_HAPTIC_TOGGLE",                                            "KC_PGDN",  "KC_ENTER", "KC_SPC",
       "KC_A",     "KC_B",     "KC_C"
     ],
