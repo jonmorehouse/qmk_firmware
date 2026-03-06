@@ -6,6 +6,7 @@
 enum custom_keycodes {
     TMUX_NEXT = SAFE_RANGE,
     TMUX_SESS,
+    CMD_CTL_SPC,
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
@@ -28,6 +29,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 tap_code16(S(KC_0));
             }
             return false;
+        case CMD_CTL_SPC:
+            if (record->event.pressed) {
+                register_code(KC_LGUI);
+                register_code(KC_LCTL);
+                tap_code(KC_SPC);
+                unregister_code(KC_LCTL);
+                unregister_code(KC_LGUI);
+            }
+            return false;
     }
     return true;
 }
@@ -41,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LSFT,  KC_Z,     KC_X,     KC_C,     KC_V,     KC_B,                                        KC_N,     KC_M,     KC_COMM,  KC_DOT,   KC_SLSH,  KC_RSFT,
                   KC_GRV,   KC_INS,   KC_LEFT,  KC_RGHT,                                                         KC_UP,    KC_DOWN,  KC_LBRC,  KC_RBRC,
                                                 TO(1),    TO(2),                                        TMUX_SESS, TMUX_NEXT,
-                                                          KC_SYSTEM_SLEEP,                              KC_PGUP,
+                                                          KC_SYSTEM_SLEEP,                              CMD_CTL_SPC,
                                       KC_RGUI,  KC_BSPC,  QK_HAPTIC_TOGGLE,                             KC_PGDN,  KC_ENTER, KC_SPC,
         KC_A,     KC_B,     KC_C
     ),
